@@ -1,20 +1,24 @@
 import { SmoothScroll } from "@/components/providers/SmoothScroll";
-import { Island } from "@/components/layout/Island";
+import { Preloader } from "@/components/layout/Preloader";
+import { Header } from "@/components/layout/Header";
+import { Cursor } from "@/components/layout/Cursor";
 import { Hero } from "@/components/sections/Hero";
+import { Statement } from "@/components/sections/Statement";
 import { Work } from "@/components/sections/Work";
-import { Stack } from "@/components/sections/Stack";
-import { Journey } from "@/components/sections/Journey";
+import { Capabilities } from "@/components/sections/Capabilities";
 import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
   return (
     <SmoothScroll>
-      <Island />
+      <Preloader />
+      <Header />
+      <Cursor />
       <main>
         <Hero />
+        <Statement />
         <Work />
-        <Stack />
-        <Journey />
+        <Capabilities />
       </main>
       <Contact />
     </SmoothScroll>
